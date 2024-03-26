@@ -23,6 +23,8 @@ public class FormSistema extends javax.swing.JFrame {
         pilhaAuxiliar = new Pilha<>(999);
         
         btnLimpar = new javax.swing.JButton();
+         jPanel1.setBackground(Color.BLACK); 
+        jPanel2.setBackground(Color.BLUE);
         
         
         btnLimpar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // Defina a fonte do botão
