@@ -250,9 +250,11 @@ public class FormSistema extends javax.swing.JFrame {
     }
 
     Recorde novoRecorde = new Recorde(nome, dataRecorde, tempo);
+        
+      if (pilhaPrincipal.isEmpty() || tempo < pilhaPrincipal.peek().getTempo()) {
     pilhaPrincipal.push(novoRecorde);
       System.out.println("Pilha Principal após adicionar novo elemento: " + pilhaPrincipal);
-
+      }
     updatePilhasTextArea(); // Chame o método para atualizar as JTextAreas
 
 
